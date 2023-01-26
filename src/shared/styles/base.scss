@@ -18,32 +18,32 @@ body {
   padding: 0;
   min-height: 100%;
   width: 100%;
-  background: $color-background;
-  color: $color-grey;
+  background: $background-color;
+  color: $color-text;
   text-rendering: optimizeSpeed;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $font-title;
-  color: $color-dark-grey;
+  font-family: $font;
+  color: $color-title;
   font-weight: normal;
 }
 
 h1 {
-  @include font-rem(24);
-  line-height: 29px;
+  @include font-rem(64);
+  line-height: 88px;
 }
 
 h2 {
-  @include font-rem(19);
-  line-height: 23px;
+  @include font-rem(40);
+  line-height: 88px;
 }
 
 h3 {
-  @include font-rem(16);
-  line-height: 15px;
+  @include font-rem(30);
+  line-height: 88px;
 }
 
 img {
@@ -60,7 +60,6 @@ ol {
 
 a {
   text-decoration: none;
-  color: $color-dark-grey;
 }
 
 h1,
