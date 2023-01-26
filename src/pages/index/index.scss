@@ -1,3 +1,14 @@
 .index-content {
   width: 100%;
 }
+
+.landing-top {
+  width: 100%;
+  max-height: 901px;
+  background: linear-gradient(rgba(0, 0, 0, 0.51), rgba(182, 182, 182, 0.51)), url(./img/background-top.webp);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+}
