@@ -1,18 +1,21 @@
-$color-header: #ffffff;
-$background-toggle-line: #ffffff;
-$color-outline: #ffffff;
-$color-telephone-link: #ffffff;
-$color-item-link: #ffffff;
+$color-header: $color-white;
+$background-toggle-line: $color-white;
+$color-outline: $color-white;
+$color-telephone-link: $color-white;
+$color-item-link: $color-white;
+$color-line-close: #fff;
 
 .header {
+  position: relative;
   width: 100%;
   box-sizing: border-box;
   font-family: $font;
   font-size: 16px;
   color: $color-header;
-  padding-left: $size-padding;
-  padding-right: $size-padding;
   margin-top: 21px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   &__toggle-menu {
     position: absolute;
@@ -26,13 +29,12 @@ $color-item-link: #ffffff;
     transform: rotate(0deg);
     transition: transform 0.5s;
 
-    @include media-breakpoint-down($md) {
-      position: relative;
+    @include media-breakpoint-down($lg_middle) {
+      position: static;
       visibility: unset;
       width: auto;
       height: 27px;
       margin-left: 40px;
-      margin-right: auto;
     }
 
     @include media-breakpoint-down($xs) {
@@ -76,6 +78,23 @@ $color-item-link: #ffffff;
       transform: rotate(0deg);
       transition: transform 0.5s;
     }
+
+    &_active {
+      height: 0px;
+      transition: height 0.5s;
+      &::before {
+        transform: rotate(-50deg);
+        transition: transform 0.3s;
+        bottom: 12px;
+        background: $color-line-close;
+      }
+      &::after {
+        transform: rotate(50deg);
+        transition: transform 0.3s;
+        top: 11px;
+        background: $color-line-close;
+      }
+    }
   }
 
   &__wrapper {
@@ -92,6 +111,10 @@ $color-item-link: #ffffff;
       outline: 2px solid $color-outline;
       outline-offset: 4px;
     }
+
+    @include media-breakpoint-down($lg_middle) {
+      margin: 0 auto;
+    }
   }
 
   &__logo-image {
@@ -105,6 +128,10 @@ $color-item-link: #ffffff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include media-breakpoint-down($lg_middle) {
+      display: none;
+    }
   }
 
   &__menu-list {
@@ -145,6 +172,10 @@ $color-item-link: #ffffff;
     width: 100%;
     max-width: 183px;
     justify-content: flex-end;
+
+    @include media-breakpoint-down($lg_middle) {
+      display: none;
+    }
   }
 
   &__telephone-link {

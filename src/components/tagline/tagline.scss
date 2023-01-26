@@ -1,3 +1,5 @@
+$color-working-hours: $color-white;
+
 .tagline {
   display: grid;
   grid-template-rows: repeat(3, auto);
@@ -10,7 +12,7 @@
     @include font-rem(24);
     line-height: 32px;
     letter-spacing: 0.09em;
-    color: #ffffff;
+    color: $color-working-hours;
     margin-bottom: 23px;
   }
 

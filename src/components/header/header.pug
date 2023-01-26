@@ -4,7 +4,7 @@ mixin header()
     const BASE_CLASS = 'header';
     const logoImage = require('./img/logo.webp');
 
-  header(class=`${BASE_CLASS}`)
+  header(class=`${BASE_CLASS} js-${BASE_CLASS}`)
     button(class=`${BASE_CLASS}__toggle-menu js-${BASE_CLASS}__toggle-menu` type="button" aria-expanded="false" aria-controls="menu" aria-label="Меню гамбургер")
       span(class=`${BASE_CLASS}__toggle-line js-${BASE_CLASS}__toggle-line`)
 

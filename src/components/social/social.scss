@@ -1,4 +1,6 @@
-$color-outline: #ffffff;
+$color-outline: $color-white;
+$color-border-link: $color-white;
+$color-link: $color-white;
 
 .social {
   display: flex;
@@ -19,13 +21,13 @@ $color-outline: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff;
+    border: 1px solid $color-border-link;
     border-radius: 50%;
     box-sizing: border-box;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: #fff;
+    color: $color-link;
 
     &:hover {
       color: $color-link-hover;
