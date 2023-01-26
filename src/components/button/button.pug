@@ -1,0 +1,27 @@
+mixin button(options = {})
+  -
+    const {
+      type = 'button',
+      text = 'buttonName',
+      link = '',
+    } = options;
+
+    const BASE_CLASS = 'button'
+    const tag = link ? 'a' : 'button'
+
+    const typeModifiers = {
+      button: `${BASE_CLASS}_type_button`,
+    }
+
+    const buttonAttributes = {
+      a: {
+        class: [BASE_CLASS],
+        href: link,
+      },
+      button: {
+        class: [BASE_CLASS,typeModifiers[type]],
+        type: type,
+      }
+    }
+
+  #{tag}&attributes(buttonAttributes[tag])&attributes(attributes)=text

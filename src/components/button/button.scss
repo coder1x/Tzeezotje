@@ -1,0 +1,33 @@
+$color-outline: #ffffff;
+
+.button {
+  font-family: $font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  background-color: #3a4574;
+  padding: 38px 64px 38px 64px;
+
+  &:hover {
+    background-color: #2a3152;
+  }
+
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 4px;
+  }
+
+  &_type {
+    &_button {
+      &:hover {
+        background-color: #2a3152;
+      }
+
+      &:focus {
+        outline: 2px solid $color-outline;
+        outline-offset: 4px;
+      }
+    }
+  }
+}

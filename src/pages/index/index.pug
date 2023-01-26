@@ -1,5 +1,6 @@
 extends ../layout/layout.pug
 include ../../components/header/header.pug
+include ../../components/tagline/tagline.pug
 
 block title 
   title Table reservation
@@ -7,6 +8,8 @@ block title
 block header 
   section(class="landing-top")
     +header()
+    div(class="landing-top__tagline-wrapper")
+      +tagline()
 
 block content
 

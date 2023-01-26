@@ -1,0 +1,19 @@
+include ../button/button.pug
+include ../social/social.pug
+
+mixin tagline()
+  -
+    const BASE_CLASS = 'tagline';
+
+  article(class=BASE_CLASS)
+    span(class=`${BASE_CLASS}__working-hours`) OPEN EVERYDAY 6AM - 9PM
+    h1(class=`${BASE_CLASS}__title`) A bad day with lunch is better than a good day without it.
+    div(class=`${BASE_CLASS}__button-wrapper js-${BASE_CLASS}__button-wrapper`)
+      +button({
+        link:'https://change-me',
+        text: 'Reserve a table',
+        })
+    div(class=`${BASE_CLASS}__social-wrapper`)
+      +social()
+
+
