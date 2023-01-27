@@ -19,8 +19,6 @@ class Header {
 
   private menuVisible = '';
 
-  onClickSidePanel = (data: boolean) => { };
-
   constructor() {
     this.className = 'js-header';
     this.classHeader = 'header';
@@ -30,7 +28,7 @@ class Header {
 
   private init() {
     this.toggleMenuActive = `${this.classHeader}__toggle-line_active`;
-    this.menuVisible = `${this.classHeader}__menu-wrapper_visible`;
+    this.menuVisible = `${this.classHeader}__menu_visible`;
 
     if (this.setDomElement()) {
       this.bindEvent();
@@ -48,7 +46,7 @@ class Header {
     }
 
     this.toggleLine = this.element.querySelector(`.${this.className}__toggle-line`);
-    this.menu = this.element.querySelector(`.${this.className}__menu-wrapper`);
+    this.menu = this.element.querySelector(`.${this.className}__menu`);
     this.button = this.element.querySelector(`.${this.className}__toggle-menu`);
 
     return true;

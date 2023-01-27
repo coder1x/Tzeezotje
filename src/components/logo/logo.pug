@@ -1,0 +1,17 @@
+mixin logo()
+  -
+
+    const logoRGB = require('./img/logo-rgb.webp')
+    const logo = require('./img/logo.webp');
+
+    const BASE_CLASS = 'logo';
+
+  a(class=`${BASE_CLASS}` href="/" aria-label="Home")
+    picture
+      source(media='(max-width: 1199px)' srcset=logoRGB)
+      source(media='(min-width: 1199px)' srcset=logo)
+      img(
+        class=`${BASE_CLASS}__image`
+        src=logo 
+        alt='Tzeezotje'
+        )

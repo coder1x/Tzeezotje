@@ -1,0 +1,35 @@
+$color-outline: $color-white;
+
+.logo {
+  &:focus {
+    outline: 2px solid $color-outline;
+    outline-offset: 4px;
+  }
+
+  @include media-breakpoint-down($lg_middle) {
+    margin: 0 auto;
+  }
+
+  @include media-breakpoint-down($lg) {
+    &:focus {
+      outline: 2px solid $color-black;
+      outline-offset: 4px;
+    }
+  }
+
+  &__image {
+    width: 269px;
+    height: 55px;
+  }
+
+  @include media-breakpoint-down($sm) {
+    margin-right: 0;
+    margin-left: auto;
+
+    &__image {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+    }
+  }
+}

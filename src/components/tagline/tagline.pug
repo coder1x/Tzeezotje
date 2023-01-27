@@ -14,6 +14,7 @@ mixin tagline()
         text: 'Reserve a table',
         })
     div(class=`${BASE_CLASS}__social-wrapper`)
-      +social()
+      +social({color:'inversion'})
+    img(class=`${BASE_CLASS}__interior` src=require('./img/interior.webp'))
 
 

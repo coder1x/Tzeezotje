@@ -1,22 +1,23 @@
 mixin social(options = {})
   -
     const {
-      color = 'white',
+      color = 'none',
     } = options;
 
     const BASE_CLASS = 'social'
 
     const variantModifiers = {
-      'white': ` ${BASE_CLASS}__item_color_white`,
-      'black': ` ${BASE_CLASS}__item_color_black`
+      'none': '',
+      'black': ` ${BASE_CLASS}_color_black`,
+      'inversion': ` ${BASE_CLASS}_color_inversion`,
     }
 
-  ul(class=BASE_CLASS)
-    li(class=`${BASE_CLASS}__item${variantModifiers[color]}`)
+  ul(class=`${BASE_CLASS}${variantModifiers[color]}`)
+    li(class=`${BASE_CLASS}__item`)
       a(class=`${BASE_CLASS}__link` href="https://change-me" alt="facebook" target="_blank" rel="noopener noreferrer") Fb
-    li(class=`${BASE_CLASS}__item${variantModifiers[color]}`)
+    li(class=`${BASE_CLASS}__item`)
       a(class=`${BASE_CLASS}__link` href="https://change-me" alt="Lg" target="_blank" rel="noopener noreferrer") Lg
-    li(class=`${BASE_CLASS}__item${variantModifiers[color]}`)
+    li(class=`${BASE_CLASS}__item`)
       a(class=`${BASE_CLASS}__link` href="https://change-me" alt="twitter" target="_blank" rel="noopener noreferrer") Tw
-    li(class=`${BASE_CLASS}__item${variantModifiers[color]}`)
+    li(class=`${BASE_CLASS}__item`)
       a(class=`${BASE_CLASS}__link` href="https://change-me" alt="youtube" target="_blank" rel="noopener noreferrer") Yt

@@ -12,6 +12,10 @@ $background-hover-button: #2a3152;
   background-color: $background-button;
   padding: 38px 64px 38px 64px;
 
+  @include media-breakpoint-down($sm) {
+    padding: 28px 54px 28px 54px;
+  }
+
   &:hover {
     background-color: $background-hover-button;
   }
@@ -31,6 +35,13 @@ $background-hover-button: #2a3152;
         outline: 2px solid $color-outline;
         outline-offset: 4px;
       }
+    }
+  }
+
+  @include media-breakpoint-down($lg) {
+    &:focus {
+      outline: 2px solid $color-black;
+      outline-offset: 4px;
     }
   }
 }

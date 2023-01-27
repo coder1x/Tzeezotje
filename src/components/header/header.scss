@@ -1,9 +1,11 @@
 $color-header: $color-white;
-$background-toggle-line: $color-white;
+$background-toggle-line: $color-black;
 $color-outline: $color-white;
 $color-telephone-link: $color-white;
 $color-item-link: $color-white;
-$color-line-close: #fff;
+$color-line-close: $color-black;
+$color-shadow: rgb(3 3 3 / 19%);
+$background-menu-item: #f8f8f8;
 
 .header {
   position: relative;
@@ -102,25 +104,29 @@ $color-line-close: #fff;
     max-width: $max-wrapper;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  &__link-logo {
-    &:focus {
-      outline: 2px solid $color-outline;
-      outline-offset: 4px;
-    }
+  &__menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     @include media-breakpoint-down($lg_middle) {
-      margin: 0 auto;
+      display: none;
     }
-  }
 
-  &__logo-image {
-    width: 100%;
-    max-width: 269px;
-    height: 55px;
+    &_visible {
+      display: block;
+      position: absolute;
+      z-index: 9;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: $color-white;
+      box-shadow: 0px 10px 13px $color-shadow;
+    }
   }
 
   &__menu-wrapper {
@@ -128,15 +134,23 @@ $color-line-close: #fff;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    @include media-breakpoint-down($lg_middle) {
-      display: none;
-    }
+    margin: 0 auto;
   }
 
   &__menu-list {
     display: flex;
     flex-direction: row;
+
+    @include media-breakpoint-down($lg_middle) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__menu-item {
@@ -144,6 +158,16 @@ $color-line-close: #fff;
 
     &:first-child {
       margin-left: 0px;
+    }
+
+    @include media-breakpoint-down($lg_middle) {
+      margin-left: 0px;
+      margin-top: 30px;
+      width: 100%;
+
+      &:nth-child(odd) {
+        background-color: $background-menu-item;
+      }
     }
   }
 
@@ -163,6 +187,27 @@ $color-line-close: #fff;
       outline: 2px solid $color-outline;
       outline-offset: 4px;
     }
+
+    @include media-breakpoint-down($lg) {
+      color: $color-black;
+
+      &:hover {
+        color: $color-inversion-hover;
+      }
+
+      &:focus {
+        outline: 2px solid $color-black;
+        outline-offset: 4px;
+      }
+    }
+
+    @include media-breakpoint-down($lg_middle) {
+      font-size: 20px;
+      width: 100%;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      padding-left: 10px;
+    }
   }
 
   &__telephone-wrapper {
@@ -174,7 +219,10 @@ $color-line-close: #fff;
     justify-content: flex-end;
 
     @include media-breakpoint-down($lg_middle) {
-      display: none;
+      padding: 40px;
+      max-width: none;
+      justify-content: flex-start;
+      box-sizing: border-box;
     }
   }
 
@@ -192,6 +240,23 @@ $color-line-close: #fff;
     &:focus {
       outline: 2px solid $color-outline;
       outline-offset: 4px;
+    }
+
+    @include media-breakpoint-down($lg) {
+      color: $color-brown;
+
+      &:hover {
+        color: $color-inversion-hover;
+      }
+
+      &:focus {
+        outline: 2px solid $color-black;
+        outline-offset: 4px;
+      }
+    }
+
+    @include media-breakpoint-down($lg_middle) {
+      font-size: 20px;
     }
   }
 }

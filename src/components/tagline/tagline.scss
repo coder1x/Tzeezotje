@@ -14,15 +14,29 @@ $color-working-hours: $color-white;
     letter-spacing: 0.09em;
     color: $color-working-hours;
     margin-bottom: 23px;
+
+    @include media-breakpoint-down($lg) {
+      color: $color-black;
+    }
   }
 
   &__title {
     grid-column: 1 / 3;
+
+    @include media-breakpoint-down($lg) {
+      color: $color-black;
+    }
   }
 
   &__button-wrapper {
     display: flex;
     padding-top: 40px;
+
+    @include media-breakpoint-down($sm) {
+      align-items: center;
+      justify-content: center;
+      grid-column: 1 / 3;
+    }
   }
 
   &__social-wrapper {
@@ -30,5 +44,25 @@ $color-working-hours: $color-white;
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: 25px;
+
+    @include media-breakpoint-down($sm) {
+      margin-top: 40px;
+      grid-column: 1 / 3;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__interior {
+    margin-top: 40px;
+    grid-column: 1 / 3;
+
+    display: none;
+    width: 100%;
+    max-width: $max-wrapper;
+
+    @include media-breakpoint-down($lg) {
+      display: block;
+    }
   }
 }
