@@ -20,7 +20,7 @@ function handleButtonKeyDown(event: KeyboardEvent) {
 }
 
 function message(text: string) {
-  const BASE_CLASS = 'message-toxin';
+  const BASE_CLASS = 'message-tzeezotje';
 
   const popUp = document.querySelector(`.${BASE_CLASS}__pop-up`);
   if (popUp) {
