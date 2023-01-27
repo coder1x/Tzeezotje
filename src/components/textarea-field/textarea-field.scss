@@ -9,13 +9,12 @@
   &__text {
     resize: none;
     width: 100%;
-    max-width: 670px;
     min-height: 125px;
     border: 1px solid #cccccc;
     margin-top: 10px;
-    padding-top: 28px;
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 30px;
     box-sizing: border-box;
 
     &::placeholder {
