@@ -1,0 +1,18 @@
+mixin textarea-field(options = {})
+  -
+    const {
+      label = '',
+      placeholder = '',
+      name = '',
+      value = '',
+    } = options;
+
+    const BASE_CLASS = 'textarea-field';
+
+  div(class=`${BASE_CLASS} js-${BASE_CLASS}`)
+
+    label(class=`${BASE_CLASS}__label`)
+      if label
+        =label
+
+      textarea(class=`${BASE_CLASS}__text` placeholder=placeholder value=value name=name)

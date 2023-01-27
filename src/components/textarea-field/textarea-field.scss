@@ -1,0 +1,29 @@
+.textarea-field {
+  &__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+  }
+
+  &__text {
+    resize: none;
+    width: 100%;
+    max-width: 620px;
+    min-height: 125px;
+    border: 1px solid #cccccc;
+    margin-top: 10px;
+    padding-top: 28px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &::placeholder {
+      color: #808080;
+    }
+
+    &:focus {
+      outline: 0px solid #cccccc;
+      border: 1px solid #9a9a9a;
+    }
+  }
+}

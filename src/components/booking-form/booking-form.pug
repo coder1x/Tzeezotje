@@ -1,0 +1,44 @@
+include ../text-field/text-field.pug
+include ../textarea-field/textarea-field.pug
+include ../button/button.pug
+
+mixin booking-form(options = {})
+  -
+    const {
+      title = '',
+    } = options;
+
+    const BASE_CLASS = 'booking-form';
+
+  form(class=`${BASE_CLASS} js-${BASE_CLASS}` action='' method='post')
+    fieldset(class=`${BASE_CLASS}__group`)
+      legend(class=`${BASE_CLASS}__title`)=title
+
+      div(class=`${BASE_CLASS}__name-wrapper js-${BASE_CLASS}__name-wrapper`)
+        +text-field({
+          label: 'Name',
+          placeholder: 'Input your name',
+          typeField: 'text',
+          name: 'name',
+        })
+
+      div(class=`${BASE_CLASS}__email-wrapper js-${BASE_CLASS}__email-wrapper`)
+        +text-field( {
+          label: 'Email',
+          placeholder: 'Input your email',
+          typeField: 'email',
+          name: 'email',
+        })
+
+      div(class=`${BASE_CLASS}__textarea-wrapper js-${BASE_CLASS}__textarea-wrapper`) 
+        +textarea-field({
+          label: 'Speciale Request',
+          placeholder: 'Input your special request',
+          })
+
+      div(class=`${BASE_CLASS}__button-wrapper js-${BASE_CLASS}__button-wrapper`)  
+        +button({
+          text: 'Send',
+          type: 'submit',
+          name: 'text'
+          })

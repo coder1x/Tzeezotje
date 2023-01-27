@@ -1,0 +1,28 @@
+mixin text-field(options = {})
+  -
+    const {
+      label = '',
+      placeholder = '',
+      typeField = '',
+      value = '',
+      name = '',
+      autocomplete = 'off',
+    } = options;
+
+    const BASE_CLASS = 'text-field'
+
+    const attributesBlock = {
+        class: [`${BASE_CLASS}__input`],
+        type:typeField,
+        placeholder:placeholder,
+        value:value,
+        name:name,
+        autocomplete:autocomplete,
+    }
+    
+  div(class=BASE_CLASS)
+    label(class=`${BASE_CLASS}__label`)
+      if label
+        =label
+      
+      input&attributes(attributesBlock)
