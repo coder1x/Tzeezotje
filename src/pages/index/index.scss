@@ -44,6 +44,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   column-gap: 34px;
   padding-left: $size-padding;
   padding-right: $size-padding;
+  box-sizing: border-box;
 
   @include media-breakpoint-down($lg) {
     flex-direction: column;
@@ -59,4 +60,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: $size-padding;
+  padding-right: $size-padding;
+  box-sizing: border-box;
 }
