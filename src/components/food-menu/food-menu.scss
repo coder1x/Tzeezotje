@@ -1,3 +1,5 @@
+$color-border-item: #e7e7e7;
+
 .food-menu {
   display: flex;
   flex-direction: column;
@@ -6,7 +8,7 @@
   max-width: 467px;
 
   &__item {
-    border-bottom: 1px solid #e7e7e7;
+    border-bottom: 1px solid $color-border-item;
     padding-bottom: 19px;
     display: flex;
     flex-direction: column;
@@ -18,7 +20,7 @@
     font-weight: 600;
     @include font-rem(24);
     line-height: 32px;
-    color: #000000;
+    color: $color-black;
     margin-bottom: 10px;
   }
 
@@ -42,8 +44,8 @@
   &__dot {
     width: 5px;
     height: 5px;
-    background: #d3b47f;
-    color: #d3b47f;
+    background: $color-brown;
+    color: $color-brown;
     border-radius: 50%;
   }
 
@@ -51,6 +53,6 @@
     font-weight: 400;
     @include font-rem(18);
     line-height: 32px;
-    color: #000000;
+    color: $color-black;
   }
 }

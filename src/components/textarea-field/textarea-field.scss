@@ -1,16 +1,20 @@
+$color-border-text: #cccccc;
+$color-placeholder: #808080;
+$color-text-hover: #9a9a9a;
+
 .textarea-field {
   &__label {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #000;
+    color: $color-black;
   }
 
   &__text {
     resize: none;
     width: 100%;
     min-height: 125px;
-    border: 1px solid #cccccc;
+    border: 1px solid $color-border-text;
     margin-top: 10px;
     padding-left: 16px;
     padding-right: 16px;
@@ -18,12 +22,12 @@
     box-sizing: border-box;
 
     &::placeholder {
-      color: #808080;
+      color: $color-placeholder;
     }
 
     &:focus {
-      outline: 0px solid #cccccc;
-      border: 1px solid #9a9a9a;
+      outline: 0px solid $color-border-text;
+      border: 1px solid $color-text-hover;
     }
   }
 }

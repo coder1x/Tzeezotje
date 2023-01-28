@@ -1,9 +1,11 @@
 $color-shadow: rgb(3 3 3 / 19%);
+$box-shadow-modular: 0px 4px 19px rgb(83 81 81);
+$color-close: #414141;
 
 .modular-form {
-  background-color: #fff;
+  background-color: $color-white;
   width: 100%;
-  box-shadow: 0px 4px 19px rgb(83 81 81);
+  box-shadow: $box-shadow-modular;
   box-sizing: border-box;
   display: none;
   flex-direction: column;
@@ -26,11 +28,11 @@ $color-shadow: rgb(3 3 3 / 19%);
     padding: 0;
     cursor: pointer;
     border: 0px;
-    background-color: #fff;
+    background-color: $color-white;
     font-size: 30px;
 
     &:hover {
-      color: #414141;
+      color: $color-close;
     }
   }
 }

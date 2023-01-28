@@ -1,3 +1,6 @@
+$color-type: #2e2e2e;
+$color-contact: #2e2e2e;
+
 .contacts {
   margin: 0px;
 
@@ -5,7 +8,7 @@
     font-weight: 700;
     @include font-rem(48);
     line-height: 88px;
-    color: #000000;
+    color: $color-black;
     margin-bottom: 35px;
   }
 
@@ -34,7 +37,7 @@
   &__disk {
     min-width: 64px;
     min-height: 64px;
-    background-color: #d3b47f;
+    background-color: $color-brown;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,13 +54,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #2e2e2e;
+    color: $color-type;
   }
 
   &__contact {
     font-weight: 500;
     @include font-rem(24);
     line-height: 32px;
-    color: #2e2e2e;
+    color: $color-contact;
   }
 }

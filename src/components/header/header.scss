@@ -38,11 +38,6 @@ $background-menu-item: #f8f8f8;
       margin-left: 40px;
     }
 
-    @include media-breakpoint-down($xs) {
-      margin-left: 0;
-      margin-right: 0;
-    }
-
     &:focus {
       outline: 2px solid $color-focus;
       outline-offset: 4px;

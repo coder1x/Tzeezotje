@@ -1,8 +1,6 @@
-$color-outline: $color-white;
-
 .logo {
   &:focus {
-    outline: 2px solid $color-outline;
+    outline: 2px solid $color-white;
     outline-offset: 4px;
   }
 

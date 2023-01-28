@@ -37,14 +37,14 @@
     font-weight: 700;
     @include font-rem(48);
     line-height: 84px;
-    color: #ffffff;
+    color: $color-white;
   }
 
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #ffffff;
+    color: $color-white;
   }
 
   &__prev,
@@ -59,7 +59,7 @@
     &:hover {
       .interior-slider__icon-prev,
       .interior-slider__icon-next {
-        stroke: #d3b47f;
+        stroke: $color-brown;
       }
     }
   }

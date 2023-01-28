@@ -1,3 +1,7 @@
+$color-border-input: #cccccc;
+$color-placeholder: #808080;
+$color-input-hover: #9a9a9a;
+
 .text-field {
   display: flex;
   flex-direction: column;
@@ -19,7 +23,7 @@
     height: 80px;
     padding: 28px 16px 28px 15px;
     outline: 0;
-    border: 1px solid #cccccc;
+    border: 1px solid $color-border-input;
 
     color: $color-black;
     font-family: $font;
@@ -31,12 +35,12 @@
     margin-top: 8px;
 
     &::placeholder {
-      color: #808080;
+      color: $color-placeholder;
     }
 
     &:hover,
     &:focus {
-      border: 1px solid #9a9a9a;
+      border: 1px solid $color-input-hover;
     }
   }
 }

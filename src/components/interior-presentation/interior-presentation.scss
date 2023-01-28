@@ -16,7 +16,7 @@
     top: 47.2%;
     left: 49.5%;
     transform: translate(-50%, -50%);
-    border: 2px solid #d3b47f;
+    border: 2px solid $color-brown;
 
     @include media-breakpoint-down($xs) {
       display: none;

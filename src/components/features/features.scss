@@ -1,3 +1,5 @@
+$color-text: #808080;
+
 .features {
   display: flex;
   flex-direction: column;
@@ -42,14 +44,14 @@
     font-weight: 700;
     @include font-rem(40);
     line-height: 88px;
-    color: #000000;
+    color: $color-black;
     text-transform: uppercase;
   }
 
   &__line {
     width: 108px;
     height: 2px;
-    background-color: #d3b47f;
+    background-color: $color-brown;
     margin-left: -54px;
     margin-top: 4px;
     margin-bottom: 16px;
@@ -59,7 +61,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: #808080;
+    color: $color-text;
   }
 
   &__image {
