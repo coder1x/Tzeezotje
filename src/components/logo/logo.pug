@@ -1,8 +1,11 @@
-mixin logo()
+mixin logo(options = {})
   -
+    const {
+      isColor = false,
+      } = options;
 
     const logoRGB = require('./img/logo-rgb.webp')
-    const logo = require('./img/logo.webp');
+    const logo = isColor ? logoRGB : require('./img/logo.webp');
 
     const BASE_CLASS = 'logo';
 

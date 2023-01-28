@@ -1,5 +1,28 @@
+include ../contacts/contacts.pug
+include ../booking-form/booking-form.pug
+include ../map/map.pug
+include ../logo/logo.pug
+include ../social/social.pug
+
 mixin footer()
   -
     const BASE_CLASS = 'footer';
 
   footer(class=BASE_CLASS)
+    div(class=`${BASE_CLASS}__contacts-wrapper`)
+      +contacts()
+
+    div(class=`${BASE_CLASS}__booking-form-wrapper`)
+      +booking-form({title:'have any questions?'})
+
+    div(class=`${BASE_CLASS}__map-wrapper`)
+      +map()
+
+    div(class=`${BASE_CLASS}__logo-wrapper`)
+      +logo({isColor: true})
+
+    div(class=`${BASE_CLASS}__social-wrapper`)
+      +social({color:'black'})
+
+
+

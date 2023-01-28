@@ -1,5 +1,28 @@
 .footer {
   width: 100%;
   min-height: 40px;
-  font-size: 16px;
+  font-family: $font;
+  display: grid;
+  // grid-template-rows: repeat(3, auto);
+
+  &__contacts-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  &__booking-form-wrapper {
+    width: 100%;
+    max-width: 659px;
+  }
+
+  &__map-wrapper {
+    width: 100%;
+    max-width: 1170px;
+  }
+
+  &__logo-wrapper {
+  }
+
+  &__social-wrapper {
+  }
 }

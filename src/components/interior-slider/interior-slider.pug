@@ -1,0 +1,32 @@
+mixin interior-slider()
+  -
+
+    const BASE_CLASS = 'interior-slider';
+
+  div(class=`${BASE_CLASS} js-${BASE_CLASS}`)
+    div(class=`${BASE_CLASS}__panel-wrapper`)
+
+      div(class=`${BASE_CLASS}__text-wrapper`)
+        h2(class=`${BASE_CLASS}__title`) Sfeerfoto's
+        p(class=`${BASE_CLASS}__text`) De beste manier om de sfeer te ervaren is eens langskomen. In tussentijd hebben we hier alvast wat foto’s voor je klaar.
+
+      div(class=`${BASE_CLASS}__buttons-wrapper`)
+        button(class=`${BASE_CLASS}__prev js-${BASE_CLASS}__prev`)
+          <svg class="interior-slider__icon-prev" width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>button previous</title>
+            <path d="M21.8958 1.89998L2.87914 20.9166C0.633304 23.1625 0.633304 26.8375 2.87914 29.0833L21.8958 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+        button(class=`${BASE_CLASS}__next js-${BASE_CLASS}__next`)
+          <svg class="interior-slider__icon-next" width="23" height="50" viewBox="0 0 23 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>button next</title>
+            <path d="M21.8958 1.89998L2.87914 20.9166C0.633304 23.1625 0.633304 26.8375 2.87914 29.0833L21.8958 48.1" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+
+    ul(class=`${BASE_CLASS}__items swiper-wrapper`)
+      li(class=`${BASE_CLASS}__item swiper-slide`)
+        img(class=`${BASE_CLASS}__image` src = require(`./img/main-hall.webp`), width="969" height="646" alt="main-hall")
+      li(class=`${BASE_CLASS}__item swiper-slide`)
+        img(class=`${BASE_CLASS}__image` src = require(`./img/bar.webp`), width="969" height="646" alt="bar")
+      li(class=`${BASE_CLASS}__item swiper-slide`)
+        img(class=`${BASE_CLASS}__image` src = require(`./img/sofa-room.webp`), width="969" height="646" alt="sofa-room")

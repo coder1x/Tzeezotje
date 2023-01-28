@@ -6,6 +6,7 @@ include ../../components/interior-presentation/interior-presentation.pug
 include ../../components/quote-slider/quote-slider.pug
 include ../../components/quote-slider/quote-slider.pug
 include ../../components/features/features.pug
+include ../../components/interior-slider/interior-slider.pug
 
 block title 
   title Table reservation
@@ -33,9 +34,11 @@ block content
       +interior-presentation()
     section(class="user-reviews")
       +quote-slider(quote)
-      
+
     section(class="restaurant-features")
       +features(features)
 
+    section(class="atmospheric-photos")
+      +interior-slider()
 
 
