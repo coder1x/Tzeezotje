@@ -7,7 +7,6 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
 
 .landing-top {
   width: 100%;
-  max-height: 901px;
   background: $linear-gradient-landing-top, url(./img/background-top.webp);
   padding-left: $size-padding;
   padding-right: $size-padding;
@@ -29,5 +28,24 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
     margin: 0 auto;
     padding-top: 151px;
     padding-bottom: 265px;
+
+    @include media-breakpoint-down($lg) {
+      padding-bottom: 0px;
+    }
+  }
+}
+
+.timetable {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 80px;
+  column-gap: 34px;
+  padding-left: $size-padding;
+  padding-right: $size-padding;
+
+  @include media-breakpoint-down($lg) {
+    flex-direction: column;
+    align-items: center;
   }
 }

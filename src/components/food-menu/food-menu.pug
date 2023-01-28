@@ -1,0 +1,19 @@
+mixin food-menu(options = {})
+  -
+    const {
+      lists = []
+      } = options;
+
+    const BASE_CLASS = 'food-menu';
+
+  ul(class=BASE_CLASS)
+    each list in lists
+      li(class=`${BASE_CLASS}__item`)
+        span(class=`${BASE_CLASS}__time`)= list.title
+        div(class=`${BASE_CLASS}__text-wrapper`)
+          span(class=`${BASE_CLASS}__dishes`)= list.firstDish 
+          div(class=`${BASE_CLASS}__dots`)
+            div(class=`${BASE_CLASS}__dot`)
+            div(class=`${BASE_CLASS}__dot`)
+            div(class=`${BASE_CLASS}__dot`)
+          span(class=`${BASE_CLASS}__dishes`)= list.secondDish

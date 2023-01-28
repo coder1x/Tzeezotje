@@ -1,0 +1,8 @@
+mixin interior-presentation()
+  -
+    const BASE_CLASS = 'interior-presentation';
+
+  div(class=BASE_CLASS)
+    div(class=`${BASE_CLASS}__frame`)
+    img(class=`${BASE_CLASS}__left-image` src = require(`./img/staircase.webp`), width="323" height="486" alt="staircase image")
+    img(class=`${BASE_CLASS}__right-image` src = require(`./img/table.webp`), width="323" height="486" alt="table image")

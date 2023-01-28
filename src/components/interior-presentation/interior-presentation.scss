@@ -1,0 +1,53 @@
+.interior-presentation {
+  width: 100%;
+  max-width: 668px;
+  max-height: 637px;
+  height: auto;
+  position: relative;
+  aspect-ratio: 471 / 502;
+  overflow: hidden;
+
+  &__frame {
+    aspect-ratio: 471 / 502;
+    width: 100%;
+    max-width: 471px;
+    height: auto;
+    position: absolute;
+    top: 47.2%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    border: 2px solid #d3b47f;
+
+    @include media-breakpoint-down($xs) {
+      display: none;
+    }
+  }
+
+  &__left-image,
+  &__right-image {
+    position: absolute;
+    width: 100%;
+    max-width: 323px;
+    height: auto;
+  }
+
+  &__left-image {
+    left: 0px;
+    bottom: 0px;
+
+    @include media-breakpoint-down($xs) {
+      display: none;
+    }
+  }
+
+  &__right-image {
+    top: 0px;
+    right: 0px;
+
+    @include media-breakpoint-down($xs) {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

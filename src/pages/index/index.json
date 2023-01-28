@@ -1,0 +1,31 @@
+{
+  "foodMenu": {
+    "lists": [
+      {
+        "title": "Woensdag 12/01",
+        "firstDish": "Salade met Serrano",
+        "secondDish": "Steak Tartaar"
+      },
+      {
+        "title": "Donderdag 13/01",
+        "firstDish": "Toast Roquefort",
+        "secondDish": "Penne met Kip en Prei"
+      },
+      {
+        "title": "Vrijdag 14/01",
+        "firstDish": "Verrassing van de Chef",
+        "secondDish": "Penne met Kip en Prei"
+      },
+      {
+        "title": "Vrijdag 15/01",
+        "firstDish": "Verrassing van de Chef",
+        "secondDish": "Penne met Kip en Prei"
+      },
+      {
+        "title": "Vrijdag 16/01",
+        "firstDish": "Verrassing van de Chef",
+        "secondDish": "Penne met Kip en Prei"
+      }
+    ]
+  }
+}

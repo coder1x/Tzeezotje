@@ -1,6 +1,8 @@
 extends ../layout/layout.pug
 include ../../components/header/header.pug
 include ../../components/tagline/tagline.pug
+include ../../components/food-menu/food-menu.pug
+include ../../components/interior-presentation/interior-presentation.pug
 
 block title 
   title Table reservation
@@ -13,5 +15,16 @@ block header
 
 block content
 
+  -
+    const {
+      foodMenu,
+    } = require('./index.json');
+
   main(class="index-content js-index-content")
+    section(class="timetable")
+      h2(class = 'visually-hidden') dishes of the day
+      +food-menu(foodMenu)
+
+      +interior-presentation()
+
 

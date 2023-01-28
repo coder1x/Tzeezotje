@@ -1,0 +1,54 @@
+.food-menu {
+  display: flex;
+  flex-direction: column;
+  font-family: $font;
+
+  &__item {
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__time {
+    font-weight: 600;
+    @include font-rem(24);
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__dots {
+    width: 39px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  &__dot {
+    width: 5px;
+    height: 5px;
+    background: #d3b47f;
+    color: #d3b47f;
+    border-radius: 50%;
+  }
+
+  &__dishes {
+    font-weight: 400;
+    @include font-rem(18);
+    line-height: 32px;
+    color: #000000;
+  }
+}
