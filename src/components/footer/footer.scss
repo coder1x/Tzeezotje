@@ -14,7 +14,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template: repeat(3, auto) / repeat(2, auto);
+    grid-template: repeat(3, auto) / auto minmax(670px, auto);
     margin: 0 auto;
     width: 100%;
     max-width: $max-wrapper;

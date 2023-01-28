@@ -1,7 +1,7 @@
 # Вёрстка landing page - Tzeezotje
 
 ## Демо страница:
-[start page on the server](https://thylacine.ru/) `https://thylacine.ru/`
+[стартовая страница на сервере](https://thylacine.ru/) `https://thylacine.ru/`
 
 ## Валидация страницы
 

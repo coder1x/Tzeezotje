@@ -114,17 +114,17 @@ $background-menu-item: #f8f8f8;
 
     @include media-breakpoint-down($lg_middle) {
       display: none;
-    }
 
-    &_visible {
-      display: block;
-      position: absolute;
-      z-index: 9;
-      top: 70px;
-      left: 0;
-      width: 100%;
-      background-color: $color-white;
-      box-shadow: 0px 10px 13px $color-shadow;
+      &_visible {
+        display: block;
+        position: absolute;
+        z-index: 9;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: $color-white;
+        box-shadow: 0px 10px 13px $color-shadow;
+      }
     }
   }
 
