@@ -16,7 +16,13 @@
   &__lists {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 45px;
+
+    @include media-breakpoint-between($md, $lg) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
+    }
   }
 
   &__list {
@@ -50,7 +56,7 @@
 
   &__contact {
     font-weight: 500;
-    font-size: 24px;
+    @include font-rem(24);
     line-height: 32px;
     color: #2e2e2e;
   }

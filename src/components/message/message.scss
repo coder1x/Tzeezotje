@@ -5,6 +5,7 @@ $color-shadow: rgba(0, 0, 0, 0.2);
 $color-close: #333;
 
 .message-tzeezotje {
+  z-index: 10;
   &__pop-up {
     position: fixed;
     background-color: $color-background;

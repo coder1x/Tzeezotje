@@ -9,7 +9,7 @@
     grid-template-rows: repeat(3, auto);
     grid-template-columns: 1fr 1fr;
 
-    column-gap: 19px;
+    column-gap: 30px;
 
     @include media-breakpoint-down($sm) {
       display: block;
@@ -27,6 +27,10 @@
 
   &__name-wrapper {
     width: 100%;
+
+    @include media-breakpoint-down($sm) {
+      margin-bottom: 20px;
+    }
   }
 
   &__email-wrapper {
