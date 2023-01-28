@@ -3,6 +3,8 @@ include ../../components/header/header.pug
 include ../../components/tagline/tagline.pug
 include ../../components/food-menu/food-menu.pug
 include ../../components/interior-presentation/interior-presentation.pug
+include ../../components/quote-slider/quote-slider.pug
+include ../../components/quote-slider/quote-slider.pug
 
 block title 
   title Table reservation
@@ -18,6 +20,7 @@ block content
   -
     const {
       foodMenu,
+      quote,
     } = require('./index.json');
 
   main(class="index-content js-index-content")
@@ -26,5 +29,9 @@ block content
       +food-menu(foodMenu)
 
       +interior-presentation()
+    section(class="user-reviews")
+      h2(class = 'visually-hidden') user reviews
+      +quote-slider(quote)
+
 
 

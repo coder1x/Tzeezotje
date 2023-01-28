@@ -1,0 +1,41 @@
+.quote-slider {
+  width: 100%;
+  max-width: 1124px;
+  font-family: $font;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 778px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 600;
+    @include font-rem(36);
+    line-height: 40px;
+    color: #d3b47f;
+    text-align: center;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+  }
+
+  &__author {
+    font-weight: 600;
+    @include font-rem(24);
+    line-height: 40px;
+    letter-spacing: 0.245em;
+    text-transform: uppercase;
+    color: #d3b47f;
+    text-align: center;
+  }
+}

@@ -40,6 +40,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   flex-direction: row;
   justify-content: center;
   padding-top: 80px;
+  padding-bottom: 90px;
   column-gap: 34px;
   padding-left: $size-padding;
   padding-right: $size-padding;
@@ -48,4 +49,14 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
     flex-direction: column;
     align-items: center;
   }
+}
+
+.user-reviews {
+  background: #3a4574;
+  width: 100%;
+  min-height: 782px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
