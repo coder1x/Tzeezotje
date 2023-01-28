@@ -3,7 +3,7 @@ mixin textarea-field(options = {})
     const {
       label = '',
       placeholder = '',
-      name = '',
+      name = 'text',
       value = '',
     } = options;
 
@@ -15,4 +15,4 @@ mixin textarea-field(options = {})
       if label
         =label
 
-      textarea(class=`${BASE_CLASS}__text` placeholder=placeholder value=value name=name)
+      textarea(class=`${BASE_CLASS}__text` placeholder=placeholder name=name)
