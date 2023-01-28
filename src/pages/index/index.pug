@@ -5,6 +5,7 @@ include ../../components/food-menu/food-menu.pug
 include ../../components/interior-presentation/interior-presentation.pug
 include ../../components/quote-slider/quote-slider.pug
 include ../../components/quote-slider/quote-slider.pug
+include ../../components/features/features.pug
 
 block title 
   title Table reservation
@@ -21,6 +22,7 @@ block content
     const {
       foodMenu,
       quote,
+      features,
     } = require('./index.json');
 
   main(class="index-content js-index-content")
@@ -30,8 +32,10 @@ block content
 
       +interior-presentation()
     section(class="user-reviews")
-      h2(class = 'visually-hidden') user reviews
       +quote-slider(quote)
+      
+    section(class="restaurant-features")
+      +features(features)
 
 
 

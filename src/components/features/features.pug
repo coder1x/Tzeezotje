@@ -1,0 +1,23 @@
+mixin features(options = {})
+  -
+    const {
+      lists = []
+      } = options;
+
+    const BASE_CLASS = 'features';
+
+    const images = {
+      steak: require(`./img/steak.webp`),
+      beer: require(`./img/beer.webp`),
+      cocktail: require(`./img/cocktail.webp`),
+    }
+
+  ul(class=BASE_CLASS)
+    each list in lists
+      li(class=`${BASE_CLASS}__item`)
+        div(class=`${BASE_CLASS}__content-wrapper`)
+          h2(class=`${BASE_CLASS}__title`)= list.title
+          span(class=`${BASE_CLASS}__line`)
+          p(class=`${BASE_CLASS}__text`)= list.text
+        
+        img(class=`${BASE_CLASS}__image` src=images[list.image] width="670" height="560" alt="features")

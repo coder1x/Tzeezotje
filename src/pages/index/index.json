@@ -46,5 +46,24 @@
         "author": "Alain Heyndrickx"
       }
     ]
+  },
+  "features": {
+    "lists": [
+      {
+        "title": "lekker eten",
+        "text": "Eten gaat niet over indruk maken op mensen. Het gaat erom dat ze zich op hun gemak voelen. Dat is onze filosofie, goed eten in een goede sfeer.",
+        "image": "steak"
+      },
+      {
+        "title": "toffe ambiance",
+        "text": "Het creëren van de juiste sfeer is zeer belangrijk voor ons. We nemen onze tijd om te zorgen dat alle elementen bijdragen aan de juiste setting.",
+        "image": "beer"
+      },
+      {
+        "title": "lekkere cocktails",
+        "text": "Ons doel is simpel: een gastvrije plek bieden waar u kunt genieten van een onvergetelijke cocktail, een goed gesprek en lekker eten.",
+        "image": "cocktail"
+      }
+    ]
   }
 }
