@@ -8,8 +8,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
 .landing-top {
   width: 100%;
   background: $linear-gradient-landing-top, url(./img/background-top.webp);
-  padding-left: $size-padding;
-  padding-right: $size-padding;
+  @include padding-wrapper();
   box-sizing: border-box;
   padding-top: 55px;
 
@@ -35,8 +34,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   }
 
   @include media-breakpoint-down($sm_middle) {
-    padding-left: $min-size-padding;
-    padding-right: $min-size-padding;
+    @include padding-wrapper(true);
   }
 }
 
@@ -47,8 +45,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   padding-top: 80px;
   padding-bottom: 90px;
   column-gap: 34px;
-  padding-left: $size-padding;
-  padding-right: $size-padding;
+  @include padding-wrapper();
   box-sizing: border-box;
 
   @include media-breakpoint-down($lg) {
@@ -57,8 +54,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   }
 
   @include media-breakpoint-down($sm_middle) {
-    padding-left: $min-size-padding;
-    padding-right: $min-size-padding;
+    @include padding-wrapper(true);
   }
 }
 
@@ -70,13 +66,11 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: $size-padding;
-  padding-right: $size-padding;
+  @include padding-wrapper();
   box-sizing: border-box;
 
   @include media-breakpoint-down($sm_middle) {
-    padding-left: $min-size-padding;
-    padding-right: $min-size-padding;
+    @include padding-wrapper(true);
   }
 }
 
@@ -84,13 +78,11 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   padding-top: 109px;
   padding-bottom: 80px;
 
-  padding-left: $size-padding;
-  padding-right: $size-padding;
+  @include padding-wrapper();
   box-sizing: border-box;
 
   @include media-breakpoint-down($sm_middle) {
-    padding-left: $min-size-padding;
-    padding-right: $min-size-padding;
+    @include padding-wrapper(true);
   }
 }
 
@@ -98,8 +90,8 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   background-image: linear-gradient(#3a4574 63%, white 63%);
   width: 100%;
 
-  padding-left: $size-padding;
-  padding-right: $size-padding;
+  @include padding-wrapper();
+
   box-sizing: border-box;
 
   padding-top: 68px;
@@ -107,7 +99,6 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   overflow: hidden;
 
   @include media-breakpoint-down($sm_middle) {
-    padding-left: $min-size-padding;
-    padding-right: $min-size-padding;
+    @include padding-wrapper(true);
   }
 }
