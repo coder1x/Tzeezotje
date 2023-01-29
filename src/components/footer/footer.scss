@@ -1,10 +1,10 @@
 .footer {
+  box-sizing: border-box;
+  width: 100%;
   padding-top: 45px;
   padding-bottom: 20px;
-  width: 100%;
   font-family: $font;
   @include padding-wrapper();
-  box-sizing: border-box;
 
   @include media-breakpoint-down($sm_middle) {
     @include padding-wrapper(true);
@@ -13,15 +13,15 @@
   &__wrapper {
     display: grid;
     grid-template: repeat(3, auto) / auto minmax(670px, auto);
-    margin: 0 auto;
     width: 100%;
     max-width: $max-wrapper;
+    margin: 0 auto;
 
     @include media-breakpoint-down($lg) {
       grid-template: repeat(4, auto) / 1fr;
-      padding-left: 20px;
-      padding-right: 20px;
       box-sizing: border-box;
+      padding-right: 20px;
+      padding-left: 20px;
     }
   }
 
@@ -30,30 +30,30 @@
     max-width: 400px;
 
     @include media-breakpoint-down($lg) {
-      margin-bottom: 30px;
       grid-column: 1/3;
       max-width: unset;
+      margin-bottom: 30px;
     }
   }
 
   &__booking-form-wrapper {
+    grid-column: 2/3;
+    justify-self: end;
     width: 100%;
     max-width: 670px;
-    justify-self: end;
-    grid-column: 2/3;
 
     @include media-breakpoint-down($lg) {
-      padding-top: 30px;
       grid-column: 1/3;
-      margin-bottom: 30px;
       justify-self: center;
+      margin-bottom: 30px;
+      padding-top: 30px;
     }
   }
 
   &__map-wrapper {
+    grid-column: 1/3;
     width: 100%;
     max-width: 1170px;
-    grid-column: 1/3;
     margin-top: 48px;
     margin-bottom: 36px;
   }
@@ -69,11 +69,10 @@
   }
 
   &__social-wrapper {
-    grid-column: 2/3;
-    justify-self: end;
-
     display: flex;
+    grid-column: 2/3;
     align-items: center;
+    justify-self: end;
 
     @include media-breakpoint-down($md_middle) {
       grid-column: 1/2;

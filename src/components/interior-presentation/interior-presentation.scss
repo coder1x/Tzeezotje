@@ -1,22 +1,22 @@
 .interior-presentation {
+  position: relative;
   width: 100%;
   max-width: 668px;
-  max-height: 637px;
   height: auto;
-  position: relative;
-  aspect-ratio: 471 / 502;
+  max-height: 637px;
   overflow: hidden;
+  aspect-ratio: 471 / 502;
 
   &__frame {
-    aspect-ratio: 471 / 502;
-    width: 100%;
-    max-width: 471px;
-    height: auto;
     position: absolute;
     top: 47.2%;
     left: 49.5%;
-    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 471px;
+    height: auto;
     border: 2px solid $color-brown;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 471 / 502;
 
     @include media-breakpoint-down($xs) {
       display: none;
@@ -32,8 +32,8 @@
   }
 
   &__left-image {
-    left: 0px;
-    bottom: 0px;
+    bottom: 0;
+    left: 0;
 
     @include media-breakpoint-down($xs) {
       display: none;
@@ -41,8 +41,8 @@
   }
 
   &__right-image {
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
 
     @include media-breakpoint-down($xs) {
       top: 50%;

@@ -1,10 +1,10 @@
 html {
-  height: 100%;
   width: 100%;
+  min-width: $min-wrapper;
+  height: 100%;
+  font-weight: normal;
   font-size: #{$font-size}px;
   font-family: $font;
-  font-weight: normal;
-  min-width: $min-wrapper;
 
   @include media-breakpoint-down($xs) {
     font-size: 11px;
@@ -14,35 +14,38 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0;
-  min-height: 100%;
-  width: 100%;
-  background: $background-color;
   color: $color-text;
-  text-rendering: optimizeSpeed;
+  background: $background-color;
+  text-rendering: optimizespeed;
 }
 
 h1,
 h2,
 h3 {
-  font-family: $font;
   color: $color-title;
   font-weight: 700;
+  font-family: $font;
 }
 
 h1 {
   @include font-rem(64);
+
   line-height: 88px;
 }
 
 h2 {
   @include font-rem(40);
+
   line-height: 88px;
 }
 
 h3 {
   @include font-rem(30);
+
   line-height: 88px;
 }
 
@@ -52,10 +55,10 @@ img {
 
 ul,
 ol {
+  margin: 0;
+  padding: 0;
   text-indent: 0;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -69,19 +72,19 @@ p {
   margin: 0;
 }
 
-.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus, :active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -89,9 +92,9 @@ input[type="radio"].visually-hidden {
 }
 
 ::-webkit-scrollbar-button {
-  background-repeat: no-repeat;
   width: 5px;
   height: 0;
+  background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar-track {
@@ -99,9 +102,8 @@ input[type="radio"].visually-hidden {
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 0;
-  border-radius: 0;
   background-color: $color-grey-light;
+  border-radius: 0;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -109,9 +111,9 @@ input[type="radio"].visually-hidden {
 }
 
 ::-webkit-resizer {
-  background-repeat: no-repeat;
   width: 4px;
   height: 0;
+  background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar {

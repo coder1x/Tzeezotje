@@ -8,12 +8,12 @@ $color-working-hours: $color-white;
 
   &__working-hours {
     grid-column: 1 / 3;
+    margin-bottom: 23px;
+    color: $color-working-hours;
     font-weight: 500;
-    @include font-rem(24);
     line-height: 32px;
     letter-spacing: 0.09em;
-    color: $color-working-hours;
-    margin-bottom: 23px;
+    @include font-rem(24);
 
     @include media-breakpoint-down($lg) {
       color: $color-black;
@@ -33,9 +33,9 @@ $color-working-hours: $color-white;
     padding-top: 40px;
 
     @include media-breakpoint-down($sm) {
+      grid-column: 1 / 3;
       align-items: center;
       justify-content: center;
-      grid-column: 1 / 3;
     }
   }
 
@@ -46,20 +46,19 @@ $color-working-hours: $color-white;
     padding-bottom: 25px;
 
     @include media-breakpoint-down($sm) {
-      margin-top: 40px;
       grid-column: 1 / 3;
       align-items: center;
       justify-content: center;
+      margin-top: 40px;
     }
   }
 
   &__interior {
-    margin-top: 40px;
-    grid-column: 1 / 3;
-
     display: none;
+    grid-column: 1 / 3;
     width: 100%;
     max-width: $max-wrapper;
+    margin-top: 40px;
 
     @include media-breakpoint-down($lg) {
       display: block;

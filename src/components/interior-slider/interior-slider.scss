@@ -2,19 +2,18 @@
   font-family: $font;
 
   &__panel-wrapper {
-    width: 100%;
-    max-width: 1168px;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1168px;
     margin: 0 auto;
     padding-bottom: 46px;
 
     @include media-breakpoint-down($md_middle) {
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
     }
   }
 
@@ -34,26 +33,26 @@
   }
 
   &__title {
-    font-weight: 700;
-    @include font-rem(48);
-    line-height: 84px;
     color: $color-white;
+    font-weight: 700;
+    line-height: 84px;
+    @include font-rem(48);
   }
 
   &__text {
+    color: $color-white;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: $color-white;
   }
 
   &__prev,
   &__next {
-    border: 0px;
-    background-color: transparent;
-    padding: 0px;
     width: 70px;
     height: 70px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
 
     &:hover {

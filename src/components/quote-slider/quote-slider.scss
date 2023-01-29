@@ -1,21 +1,21 @@
 .quote-slider {
+  display: flex;
+  align-items: center;
   width: 100%;
   max-width: 1124px;
   font-family: $font;
-  display: flex;
-  align-items: center;
 
   &__prev,
   &__next {
-    width: 70px;
-    height: 70px;
-    border: 0px;
-    background-color: transparent;
-    padding: 0px;
-    cursor: pointer;
     z-index: 2;
     display: flex;
     align-items: center;
+    width: 70px;
+    height: 70px;
+    padding: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 
     &:hover {
       .quote-slider__icon-prev,
@@ -26,14 +26,14 @@
   }
 
   &__prev {
-    margin-right: 20px;
     justify-content: flex-start;
+    margin-right: 20px;
   }
 
   &__next {
-    right: 0px;
-    margin-left: 20px;
+    right: 0;
     justify-content: flex-end;
+    margin-left: 20px;
   }
 
   &__icon-prev,
@@ -48,8 +48,8 @@
   &__wrapper {
     width: 100%;
     max-width: 800px;
-    overflow: hidden;
     margin: 0 auto;
+    overflow: hidden;
   }
 
   &__item {
@@ -61,7 +61,7 @@
   }
 
   &__quote {
-    margin: 0px;
+    margin: 0;
   }
 
   &__icon-quote {
@@ -69,30 +69,30 @@
   }
 
   &__title {
-    font-weight: 600;
-    @include font-rem(36);
-    line-height: 40px;
-    color: $color-brown;
-    text-align: center;
     margin-bottom: 20px;
+    color: $color-brown;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    @include font-rem(36);
   }
 
   &__text {
+    margin-bottom: 31px;
+    color: $color-white;
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
-    color: $color-white;
     text-align: center;
-    margin-bottom: 31px;
   }
 
   &__author {
+    color: $color-brown;
     font-weight: 600;
-    @include font-rem(24);
     line-height: 40px;
     letter-spacing: 0.245em;
-    text-transform: uppercase;
-    color: $color-brown;
     text-align: center;
+    text-transform: uppercase;
+    @include font-rem(24);
   }
 }

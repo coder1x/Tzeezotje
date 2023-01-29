@@ -1,21 +1,23 @@
 $background-landing-top: #fff;
-$linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0, 0.51));
+$linear-gradient-landing-top: linear-gradient(
+  rgb(0 0 0 / 51%),
+  rgb(0 0 0 / 51%)
+);
 
 .index-content {
   width: 100%;
 }
 
 .landing-top {
-  width: 100%;
-  background: $linear-gradient-landing-top, url(./img/background-top.webp);
-  @include padding-wrapper();
   box-sizing: border-box;
+  width: 100%;
   padding-top: 55px;
-
-  background-size: cover;
+  background: $linear-gradient-landing-top, url("./img/background-top.webp");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  @include padding-wrapper();
 
   @include media-breakpoint-down($lg) {
     background: $background-landing-top;
@@ -29,7 +31,7 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
     padding-bottom: 265px;
 
     @include media-breakpoint-down($lg) {
-      padding-bottom: 0px;
+      padding-bottom: 0;
     }
   }
 
@@ -42,11 +44,11 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
   display: flex;
   flex-direction: row;
   justify-content: center;
+  box-sizing: border-box;
   padding-top: 80px;
   padding-bottom: 90px;
   column-gap: 34px;
   @include padding-wrapper();
-  box-sizing: border-box;
 
   @include media-breakpoint-down($lg) {
     flex-direction: column;
@@ -59,15 +61,15 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
 }
 
 .user-reviews {
-  background: #3a4574;
-  width: 100%;
-  min-height: 782px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  @include padding-wrapper();
+  justify-content: center;
   box-sizing: border-box;
+  width: 100%;
+  min-height: 782px;
+  background: #3a4574;
+  @include padding-wrapper();
 
   @include media-breakpoint-down($sm_middle) {
     @include padding-wrapper(true);
@@ -75,11 +77,11 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
 }
 
 .restaurant-features {
+  box-sizing: border-box;
   padding-top: 109px;
   padding-bottom: 80px;
 
   @include padding-wrapper();
-  box-sizing: border-box;
 
   @include media-breakpoint-down($sm_middle) {
     @include padding-wrapper(true);
@@ -87,16 +89,14 @@ $linear-gradient-landing-top: linear-gradient(rgba(0, 0, 0, 0.51), rgba(0, 0, 0,
 }
 
 .atmospheric-photos {
-  background-image: linear-gradient(#3a4574 63%, white 63%);
-  width: 100%;
-
-  @include padding-wrapper();
-
   box-sizing: border-box;
-
+  width: 100%;
   padding-top: 68px;
   padding-bottom: 50px;
   overflow: hidden;
+  background-image: linear-gradient(#3a4574 63%, white 63%);
+
+  @include padding-wrapper();
 
   @include media-breakpoint-down($sm_middle) {
     @include padding-wrapper(true);

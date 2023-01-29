@@ -11,8 +11,8 @@ $color-text: #808080;
   &__item {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 
     @include media-breakpoint-down($lg) {
       flex-direction: column;
@@ -32,36 +32,35 @@ $color-text: #808080;
   }
 
   &__content-wrapper {
-    width: 100%;
-    max-width: 470px;
-
+    position: relative;
     display: flex;
     flex-direction: column;
-    position: relative;
+    width: 100%;
+    max-width: 470px;
   }
 
   &__title {
-    font-weight: 700;
-    @include font-rem(40);
-    line-height: 88px;
     color: $color-black;
+    font-weight: 700;
+    line-height: 88px;
     text-transform: uppercase;
+    @include font-rem(40);
   }
 
   &__line {
     width: 108px;
     height: 2px;
-    background-color: $color-brown;
-    margin-left: -54px;
     margin-top: 4px;
     margin-bottom: 16px;
+    margin-left: -54px;
+    background-color: $color-brown;
   }
 
   &__text {
+    color: $color-text;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: $color-text;
   }
 
   &__image {

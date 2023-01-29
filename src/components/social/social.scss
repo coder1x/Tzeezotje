@@ -10,24 +10,24 @@ $color-link: $color-white;
     margin-left: 25px;
 
     &:first-child {
-      margin-left: 0px;
+      margin-left: 0;
     }
   }
 
   &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     width: 48px;
     height: 48px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $color-border-link;
-    border-radius: 50%;
-    box-sizing: border-box;
+    color: $color-link;
     font-weight: 600;
     font-size: 16px;
     line-height: 24px;
-    color: $color-link;
+    border: 1px solid $color-border-link;
+    border-radius: 50%;
 
     &:hover {
       color: $color-link-hover;
@@ -35,10 +35,10 @@ $color-link: $color-white;
     }
 
     &:focus {
-      outline: 2px solid $color-outline;
-      outline-offset: 4px;
       color: $color-link-hover;
       border: 1px solid $color-link-hover;
+      outline: 2px solid $color-outline;
+      outline-offset: 4px;
     }
   }
 }
@@ -54,10 +54,10 @@ $color-link: $color-white;
     }
 
     &:focus {
-      outline: 2px solid $color-outline;
-      outline-offset: 4px;
       color: $color-link-hover;
       border: 1px solid $color-link-hover;
+      outline: 2px solid $color-outline;
+      outline-offset: 4px;
     }
   }
 }
@@ -74,10 +74,10 @@ $color-link: $color-white;
       }
 
       &:focus {
-        outline: 2px solid $color-black;
-        outline-offset: 4px;
         color: $color-inversion-hover;
         border: 1px solid $color-inversion-hover;
+        outline: 2px solid $color-black;
+        outline-offset: 4px;
       }
     }
   }

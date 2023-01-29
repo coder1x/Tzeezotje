@@ -1,33 +1,33 @@
-$color-border-text: #cccccc;
+$color-border-text: #ccc;
 $color-placeholder: #808080;
 $color-text-hover: #9a9a9a;
 
 .textarea-field {
   &__label {
+    color: $color-black;
     font-weight: 400;
     font-size: 16px;
     line-height: 32px;
-    color: $color-black;
   }
 
   &__text {
-    resize: none;
+    box-sizing: border-box;
     width: 100%;
     min-height: 125px;
-    border: 1px solid $color-border-text;
     margin-top: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
     padding-top: 30px;
-    box-sizing: border-box;
+    padding-right: 16px;
+    padding-left: 16px;
+    border: 1px solid $color-border-text;
+    resize: none;
 
     &::placeholder {
       color: $color-placeholder;
     }
 
     &:focus {
-      outline: 0px solid $color-border-text;
       border: 1px solid $color-text-hover;
+      outline: 0 solid $color-border-text;
     }
   }
 }

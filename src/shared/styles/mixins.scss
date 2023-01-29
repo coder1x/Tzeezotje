@@ -34,31 +34,31 @@
 
 @mixin padding-wrapper($isMin: false) {
   @if ($isMin == false) {
-    padding-left: $size-padding;
     padding-right: $size-padding;
+    padding-left: $size-padding;
   } @else {
-    padding-left: $min-size-padding;
     padding-right: $min-size-padding;
+    padding-left: $min-size-padding;
   }
 }
 
 //-------------------------------
 @mixin absolute-center {
+  position: absolute;
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   margin: auto;
-  position: absolute;
 }
 
 @mixin marker($symbol, $size) {
-  content: $symbol;
   position: absolute;
   left: calc($size / 2 * -1);
+  content: $symbol;
 }
 
 @mixin list-item-style {
-  padding: 5px 0 5px 10px;
   position: relative;
+  padding: 5px 0 5px 10px;
 }

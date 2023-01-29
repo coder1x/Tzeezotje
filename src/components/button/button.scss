@@ -6,18 +6,18 @@ $background-hover-button: #2a3152;
 .button {
   width: 100%;
   max-width: 270px;
-  font-family: $font;
+  padding: 38px 64px;
+  color: $color-button;
   font-weight: 500;
   font-size: 18px;
+  font-family: $font;
   line-height: 24px;
-  color: $color-button;
   background-color: $background-button;
-  padding: 38px 64px 38px 64px;
-  border: 0px;
+  border: 0;
   cursor: pointer;
 
   @include media-breakpoint-down($sm) {
-    padding: 28px 54px 28px 54px;
+    padding: 28px 54px;
   }
 
   &:hover {
