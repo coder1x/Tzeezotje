@@ -1,5 +1,5 @@
 import { boundMethod } from 'autobind-decorator';
-import message from '../message/message';
+import { message } from '@components/index';
 
 class BookingForm {
   className: string;

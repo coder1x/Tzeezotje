@@ -1,4 +1,4 @@
-import HomePage from './index';
+import HomePage from './HomePage';
 
 function initialization(className: string) {
   const layout = document.querySelectorAll(className);

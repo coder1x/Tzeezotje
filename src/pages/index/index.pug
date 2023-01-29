@@ -1,19 +1,25 @@
-extends ../layout/layout.pug
-include ../../components/header/header.pug
-include ../../components/tagline/tagline.pug
-include ../../components/food-menu/food-menu.pug
-include ../../components/interior-presentation/interior-presentation.pug
-include ../../components/quote-slider/quote-slider.pug
-include ../../components/quote-slider/quote-slider.pug
-include ../../components/features/features.pug
-include ../../components/interior-slider/interior-slider.pug
+extends @pages/layout/layout.pug
+include @components/header/header.pug
+include @components/tagline/tagline.pug
+include @components/food-menu/food-menu.pug
+include @components/interior-presentation/interior-presentation.pug
+include @components/quote-slider/quote-slider.pug
+include @components/quote-slider/quote-slider.pug
+include @components/features/features.pug
+include @components/interior-slider/interior-slider.pug
 
 block title 
   title Table reservation
 
 block header 
+
+  -
+    const {
+      headerMenu,
+    } = require('./index.json');
+
   div(class="landing-top")
-    +header()
+    +header(headerMenu)
     div(class="landing-top__tagline-wrapper")
       +tagline()
 

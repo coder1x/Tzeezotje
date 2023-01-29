@@ -1,7 +1,10 @@
 include ../logo/logo.pug
 
-mixin header()
+mixin header(options = {})
   -
+    const {
+      lists = []
+      } = options;
 
     const BASE_CLASS = 'header';
 
@@ -16,14 +19,9 @@ mixin header()
       div(class=`${BASE_CLASS}__menu js-${BASE_CLASS}__menu`)
         nav(class=`${BASE_CLASS}__menu-wrapper` id="menu" aria-label="Главное меню")
           ul(class=`${BASE_CLASS}__menu-list`)
-            li(class=`${BASE_CLASS}__menu-item`)
-              a(class=`${BASE_CLASS}__item-link` href="https://change-me") À la carte
-            li(class=`${BASE_CLASS}__menu-item`)
-              a(class=`${BASE_CLASS}__item-link` href="https://change-me") Wijnkaart
-            li(class=`${BASE_CLASS}__menu-item`)
-              a(class=`${BASE_CLASS}__item-link` href="https://change-me") Lunchmenu
-            li(class=`${BASE_CLASS}__menu-item`)
-              a(class=`${BASE_CLASS}__item-link` href="https://change-me") Contact
+            each list in lists
+              li(class=`${BASE_CLASS}__menu-item`)
+                a(class=`${BASE_CLASS}__item-link` href=list.url)= list.title
 
         div(class=`${BASE_CLASS}__telephone-wrapper`)
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

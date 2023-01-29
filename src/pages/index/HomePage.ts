@@ -1,5 +1,4 @@
-import Tagline from '../../components/tagline/Tagline';
-import ModularForm from '../../components/modular-form/ModularForm';
+import { Tagline, ModularForm } from '@components/index';
 
 class HomePage {
   private tagline: Tagline | null = null;

@@ -65,5 +65,25 @@
         "image": "cocktail"
       }
     ]
+  },
+  "headerMenu": {
+    "lists": [
+      {
+        "title": "À la carte",
+        "url": "https://change-me"
+      },
+      {
+        "title": "Wijnkaart",
+        "url": "https://change-me"
+      },
+      {
+        "title": "Lunchmenu",
+        "url": "https://change-me"
+      },
+      {
+        "title": "Contact",
+        "url": "https://change-me"
+      }
+    ]
   }
 }
