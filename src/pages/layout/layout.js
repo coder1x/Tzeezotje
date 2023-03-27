@@ -22,14 +22,16 @@ import ScrollSmoother from '@shared/lib/ScrollSmoother.min.js';
 
   const tagline = document.querySelector('.js-tagline');
 
-  if (tagline) {
+  if (tagline && window.innerWidth > 1199) {
     gsap.fromTo(
       tagline,
       {
+        scale: 1,
         opacity: 1,
       },
       {
-        opacity: 0,
+        scale: 1.3,
+        opacity: 0.5,
         scrollTrigger: {
           trigger: tagline,
           start: 'top',
