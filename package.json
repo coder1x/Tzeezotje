@@ -59,6 +59,7 @@
     "autobind-decorator": "^2.4.0",
     "focus-visible": "^5.2.0",
     "fox-favicon": "^1.0.0",
+    "gsap": "^3.11.5",
     "jquery": "^3.6.3",
     "normalize.css": "^8.0.1",
     "swiper": "^8.4.6"

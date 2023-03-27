@@ -10,10 +10,12 @@ html(lang='nl')
     block title
       title Table reservation
   body(class='page')
-    block header
-      +header()
-    .page__wrapper
-      block content
-    +modular-form()
-    +message()
-    +footer()
+    div(class='wrapper')
+      div(class='content')
+        block header
+          +header()
+        .page__wrapper
+          block content
+        +modular-form()
+        +message()
+        +footer()

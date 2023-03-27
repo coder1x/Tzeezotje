@@ -21,6 +21,7 @@ body {
   color: $color-text;
   background: $background-color;
   text-rendering: optimizespeed;
+  overflow-x: hidden;
 }
 
 h1,

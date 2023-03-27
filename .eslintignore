@@ -1,2 +1,3 @@
 npm_plugins/*
 config/*
+src/shared/lib/*
